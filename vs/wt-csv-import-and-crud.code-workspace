@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "D:\\projects\\wt\\wt-csv-import-and-crud"
+		}
+	],
+	"settings": {
+		"csv-preview.separator": "[,;]"
+	}
+}
