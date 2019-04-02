@@ -15,6 +15,8 @@ Location: /demo_data/poblacion-espanola.csv
 
 ## Uploader
 
+- Install with `npm install`
+
 - Start with `npm run start`
 
 - Dependences:
@@ -28,6 +30,11 @@ Location: /demo_data/poblacion-espanola.csv
 http://localhost:3000
 
 ## CRUD REACT CLIENT
+
+![](./demo_data/screenShot2.png)
+
+- Go to client folder `cd .\public\client\`
+- Install with `npm install`
 
 http://localhost:3000/public/client/
 
