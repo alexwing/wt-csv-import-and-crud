@@ -73,4 +73,4 @@ http://localhost:3000/api/population/edit/5ca22f84488dbd0a20c9b57b/Viejo2/11/11/
 ### DELETE
 `http://localhost:3000/api/population/delete/[ObjectId]`
 
-http://localhost:3000/api/population/delete/[5ca22f84488dbd0a20c9b57b]
+http://localhost:3000/api/population/delete/5ca22f84488dbd0a20c9b57b
