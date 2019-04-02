@@ -4,6 +4,16 @@ Population by age and sex CSV uploader
 
 ![](./demo_data/screenShot.png)
 
+- Start with `npm run start`
+
+- Dependences:
+
+    `"express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "fast-csv": "^2.4.1",
+    "json2csv": "^4.3.2",
+    "mongoose": "^5.4.0"`
+
 ## Demo data 
 
 Demo data from https://datos.gob.es
