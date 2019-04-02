@@ -2,7 +2,18 @@
 
 Population by age and sex CSV uploader
 
+Only use GET methods, to be able to test the CRUD more easily.
+
 ![](./demo_data/screenShot.png)
+
+
+## Demo data 
+
+Demo data from https://datos.gob.es
+
+Location: /demo_data/poblacion-espanola.csv
+
+## Uploader
 
 - Start with `npm run start`
 
@@ -14,16 +25,18 @@ Population by age and sex CSV uploader
     "json2csv": "^4.3.2",
     "mongoose": "^5.4.0"`
 
-## Demo data 
-
-Demo data from https://datos.gob.es
-
-Location: /demo_data/poblacion-espanola.csv
-
-### Uploader
 http://localhost:3000
 
-### Schema for CSV AND MODEL
+## CRUD REACT CLIENT
+
+http://localhost:3000/public/client/
+
+- Dependences:
+
+    `"react": "^15.6.1",
+    "react-dom": "^15.6.1"`
+
+## Schema for CSV AND MODEL
 
     Edad:String,
     Hombre:Number
@@ -33,7 +46,7 @@ http://localhost:3000
 ## CRUD API GETS
 
 ### SHOW ALL 
-http://localhost:3000/api/population
+http://localhost:3000/api/population/all
 
 ### GET ONE
 `http://localhost:3000/api/population/[ObjectId]`

@@ -46,9 +46,10 @@ exports.save = function (req, res) {
         small.Mujer = req.params.Mujer  
         small.Total = req.params.Total;    
         small.save(function (err,raw) {
-        if (err) return console.log(err);
+        if (err) return res.send({message:0})
             res.send({
-                ID:raw._id
+                _id:raw._id,
+                message:1
             })
         });
 }
@@ -60,8 +61,10 @@ exports.edit = function (req, res) {
         small.Mujer = req.params.Mujer  
         small.Total = req.params.Total;    
         Population.findOneAndUpdate({_id: req.params._id }, { $set:small}, function (err,raw) {
-        if (err) return res.send({UPDATE:0})
-            res.send({UPDATE:1})
+        if (err) return res.send({message:0})
+            res.send({
+                    message:1
+                })
         });
 }
 
@@ -69,13 +72,13 @@ exports.edit = function (req, res) {
 exports.delete = function (req, res) {
     Population.remove({ _id: req.params._id }).then(
         res.send({
-            result: "DELETE"
+            message:1
         })
     )
         .catch(
             err => {
                 res.status(500).send({
-                    message: err.message
+                    message: 0
                 });
             }
         )
