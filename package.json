@@ -16,6 +16,6 @@
     "express-fileupload": "^1.1.9",
     "fast-csv": "^2.4.1",
     "json2csv": "^4.3.2",
-    "mongoose": "^5.4.0"
+    "mongoose": "^5.7.5"
   }
 }
