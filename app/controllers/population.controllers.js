@@ -1,5 +1,5 @@
 const Population = require('../model/population');
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');
 
 exports.findAll = (req, res) => {
     Population.find()

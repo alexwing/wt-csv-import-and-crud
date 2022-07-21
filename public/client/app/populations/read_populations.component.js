@@ -7,7 +7,6 @@ window.ReadProductsComponent = React.createClass({
 componentDidMount: function(){
 	this.serverRequest = $.get("http://localhost:3000/api/population/all", function(data){
         console.log(data.Population);
-       // alert("populations:"+ JSON.stringify(data));
 		this.setState  ({populations : data.Population});
 	}.bind(this));
 },
@@ -16,8 +15,7 @@ componentWillUnmount: function() {
     },
      render: function() {
         // list of populations
-        var filteredProducts = this.state.populations;
-        console.log(filteredProducts);
+        let filteredProducts = this.state.populations;
         $('.page-header h1').text('Read Products');
  
         return (

@@ -1,7 +1,7 @@
 window.ProductsTable = React.createClass({
     render: function() {
  
-    var rows = this.props.populations
+    let rows = this.props.populations
         .map(function(population, i) {
             return (
                 <ProductRow

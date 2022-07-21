@@ -26,7 +26,7 @@ componentDidMount: function(){
         }.bind(this));
  
     // read one population data
-    var populationId = this.props.populationId;
+    let populationId = this.props.populationId;
     this.serverRequestProd = $.get("http://localhost:3000/api/population/" + populationId,
         function (population) {
             this.setState({id: population.Population.id});

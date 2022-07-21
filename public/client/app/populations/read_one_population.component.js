@@ -15,7 +15,7 @@ window.ReadOneProductComponent = React.createClass({
 // on mount, read population data and them as this component's state
 componentDidMount: function(){
  
-    var populationId = this.props.populationId;
+    let populationId = this.props.populationId;
  
     this.serverRequestProd = $.get("http://localhost:3000/api/population/" + populationId,
         function (population) {

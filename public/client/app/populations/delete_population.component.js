@@ -6,7 +6,7 @@ window.DeleteProductComponent = React.createClass({
 onDelete: function(e){
  
     // population to delete
-    var populationId = this.props.populationId;
+    let populationId = this.props.populationId;
  
     // submit form data to api
     $.ajax({
